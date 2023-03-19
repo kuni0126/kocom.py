@@ -674,6 +674,7 @@ def publish_discovery(dev, sub=''):
             if logtxt != "" and config.get('Log', 'show_mqtt_publish') == 'True':
                 logging.info(logtxt)
     elif dev == 'thermo':
+        logging.info(room_h_dic.get(sub))
         num = int(room_h_dic.get(sub))
         #ha_topic = 'homeassistant/climate/kocom_livingroom_thermostat/config'
         topic = 'homeassistant/climate/kocom_{}_thermostat/config'.format(sub)
