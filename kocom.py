@@ -4,7 +4,7 @@
 '''
  python kocom script
 
- : forked from script written by vifrost, kyet, 룰루해피, 따분, Susu Daddy
+ : forked from script written by vifrost, kyet, 룰루해피, 따분, Susu Daddy, kuni0126
 
  apt-get install mosquitto
  python3 -m pip install pyserial
@@ -23,7 +23,7 @@ import configparser
 
 
 # define -------------------------------
-SW_VERSION = '2022.11.08'
+SW_VERSION = '2022.03.19'
 CONFIG_FILE = 'kocom.conf'
 BUF_SIZE = 100
 
@@ -46,6 +46,7 @@ seq_h_dic = {v: k for k, v in seq_t_dic.items()}
 device_h_dic = {v: k for k, v in device_t_dic.items()}
 cmd_h_dic = {v: k for k, v in cmd_t_dic.items()}
 room_h_dic = {'livingroom':'00', 'myhome':'00', 'room1':'01', 'room2':'02', 'room3':'03', 'kitchen':'04'}
+
 
 # mqtt functions ----------------------------
 
